@@ -189,14 +189,15 @@ def problem1a(m, n):
     start = m**2
     end = n**2
     total = 0
-    for i in range (end-start+1):
+    for i in range(end-start+1):
         total += math.sin(i+start)
     return total
+
 
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this TEST function.
+    # DONE: 5. Implement this TEST function.
     #   It TESTS the  problem1b  function defined below.
     #   Include at least **   4   ** tests.  Use the usual form:
     #
@@ -282,6 +283,7 @@ def problem1b(m, f):
             total += 1
     return total
 
+
 def run_test_problem1c():
     """ Tests the   problem1c   function. """
     print()
@@ -303,7 +305,6 @@ def run_test_problem1c():
     print_expected_result_of_test([11], expected, test_results, format_string)
     actual = problem1c(11)
     print_actual_result_of_test(expected, actual, test_results)
-
 
     # Test 3:
     expected = 33
@@ -376,7 +377,7 @@ def problem1c(n):
     #    TIME ESTIMATE:   15 to 20 minutes.
     # ------------------------------------------------------------------
     total = 1
-    for i in range (n-1):
+    for i in range(n-1):
         if is_prime(2+i):
             total *= (2+i)
     return sum_of_digits(total)
@@ -385,6 +386,7 @@ def problem1c(n):
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.
 ###############################################################################
+
 
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string):
